@@ -1,0 +1,45 @@
+tomaz@K84CElementary:~/Trybe/Aula Testes/unix_tests$ ls -l
+total 24
+-rw-rw-r-- 1 tomaz tomaz 1924 mar 24 17:17 bunch_of_things.txt
+-rw-rw-r-- 1 tomaz tomaz 1842 mar 24 00:14 countries.txt
+-rw-rw-r-- 1 tomaz tomaz    0 mar 24 00:20 empty.tbt
+-rw-rw-r-- 1 tomaz tomaz    0 mar 24 00:20 empty.txt
+-rw-rw-r-- 1 tomaz tomaz   81 mar 24 17:07 phrases2.txt
+-rw-rw-r-- 1 tomaz tomaz   52 mar 24 00:17 phrases.txt
+-rw-rw-r-- 1 tomaz tomaz   47 mar 24 16:56 skills2.txt
+-rw-rw-r-- 1 tomaz tomaz   29 mar 24 17:03 top_skills.txt
+tomaz@K84CElementary:~/Trybe/Aula Testes/unix_tests$ chmod o+rw bunch_of_things.txt 
+tomaz@K84CElementary:~/Trybe/Aula Testes/unix_tests$ ls -l
+total 24
+-rw-rw-rw- 1 tomaz tomaz 1924 mar 24 17:17 bunch_of_things.txt
+-rw-rw-r-- 1 tomaz tomaz 1842 mar 24 00:14 countries.txt
+-rw-rw-r-- 1 tomaz tomaz    0 mar 24 00:20 empty.tbt
+-rw-rw-r-- 1 tomaz tomaz    0 mar 24 00:20 empty.txt
+-rw-rw-r-- 1 tomaz tomaz   81 mar 24 17:07 phrases2.txt
+-rw-rw-r-- 1 tomaz tomaz   52 mar 24 00:17 phrases.txt
+-rw-rw-r-- 1 tomaz tomaz   47 mar 24 16:56 skills2.txt
+-rw-rw-r-- 1 tomaz tomaz   29 mar 24 17:03 top_skills.txt
+tomaz@K84CElementary:~/Trybe/Aula Testes/unix_tests$ chmod 444 bunch_of_things.txt 
+tomaz@K84CElementary:~/Trybe/Aula Testes/unix_tests$ ls -l
+total 24
+-r--r--r-- 1 tomaz tomaz 1924 mar 24 17:17 bunch_of_things.txt
+-rw-rw-r-- 1 tomaz tomaz 1842 mar 24 00:14 countries.txt
+-rw-rw-r-- 1 tomaz tomaz    0 mar 24 00:20 empty.tbt
+-rw-rw-r-- 1 tomaz tomaz    0 mar 24 00:20 empty.txt
+-rw-rw-r-- 1 tomaz tomaz   81 mar 24 17:07 phrases2.txt
+-rw-rw-r-- 1 tomaz tomaz   52 mar 24 00:17 phrases.txt
+-rw-rw-r-- 1 tomaz tomaz   47 mar 24 16:56 skills2.txt
+-rw-rw-r-- 1 tomaz tomaz   29 mar 24 17:03 top_skills.txt
+tomaz@K84CElementary:~/Trybe/Aula Testes/unix_tests$ chmod 644 bunch_of_things.txt 
+tomaz@K84CElementary:~/Trybe/Aula Testes/unix_tests$ ls -l
+total 24
+-rw-r--r-- 1 tomaz tomaz 1924 mar 24 17:17 bunch_of_things.txt
+-rw-rw-r-- 1 tomaz tomaz 1842 mar 24 00:14 countries.txt
+-rw-rw-r-- 1 tomaz tomaz    0 mar 24 00:20 empty.tbt
+-rw-rw-r-- 1 tomaz tomaz    0 mar 24 00:20 empty.txt
+-rw-rw-r-- 1 tomaz tomaz   81 mar 24 17:07 phrases2.txt
+-rw-rw-r-- 1 tomaz tomaz   52 mar 24 00:17 phrases.txt
+-rw-rw-r-- 1 tomaz tomaz   47 mar 24 16:56 skills2.txt
+-rw-rw-r-- 1 tomaz tomaz   29 mar 24 17:03 top_skills.txt
+tomaz@K84CElementary:~/Trybe/Aula Testes/unix_tests$ 
+

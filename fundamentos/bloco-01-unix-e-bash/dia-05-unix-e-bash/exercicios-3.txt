@@ -1,0 +1,33 @@
+tomaz@K84CElementary:~/Trybe/Aula Testes/unix_tests$ ps
+    PID TTY          TIME CMD
+  12778 pts/0    00:00:00 bash
+  14685 pts/0    00:00:00 ps
+tomaz@K84CElementary:~/Trybe/Aula Testes/unix_tests$ sleep 30 &
+[1] 14710
+tomaz@K84CElementary:~/Trybe/Aula Testes/unix_tests$ ps
+    PID TTY          TIME CMD
+  12778 pts/0    00:00:00 bash
+  14710 pts/0    00:00:00 sleep
+  14722 pts/0    00:00:00 ps
+tomaz@K84CElementary:~/Trybe/Aula Testes/unix_tests$ kill 14710
+[1]+  Terminado               sleep 30
+tomaz@K84CElementary:~/Trybe/Aula Testes/unix_tests$ bg
+[2]+ sleep 30 &
+tomaz@K84CElementary:~/Trybe/Aula Testes/unix_tests$ sleep 300 &
+[3] 14830
+[2]   Concluído              sleep 30
+tomaz@K84CElementary:~/Trybe/Aula Testes/unix_tests$ sleep 200
+^Z
+[4]+  Parado                  sleep 200
+tomaz@K84CElementary:~/Trybe/Aula Testes/unix_tests$ sleep 100
+^Z
+[5]+  Parado                  sleep 100
+tomaz@K84CElementary:~/Trybe/Aula Testes/unix_tests$ jobs
+[3]   Executando              sleep 300 &
+[4]-  Parado                  sleep 200
+[5]+  Parado                  sleep 100
+tomaz@K84CElementary:~/Trybe/Aula Testes/unix_tests$ fg 3
+sleep 300
+^Z
+[3]+  Parado                  sleep 300
+

@@ -1,0 +1,39 @@
+tomaz@K84CElementary:~/Trybe/Aula Testes$ mkdir unix_tests
+tomaz@K84CElementary:~/Trybe/Aula Testes$ cd unix_tests
+tomaz@K84CElementary:~/Trybe/Aula Testes/unix_tests$ touch trybe.txt
+tomaz@K84CElementary:~/Trybe/Aula Testes/unix_tests$ cp trybe.txt trybe_backup.txt
+tomaz@K84CElementary:~/Trybe/Aula Testes/unix_tests$ mv trybe.txt trybe1.txt
+tomaz@K84CElementary:~/Trybe/Aula Testes/unix_tests$ mkdir backup
+tomaz@K84CElementary:~/Trybe/Aula Testes/unix_tests$ mv trybe_backup ./backup
+mv: não foi possível obter estado de 'trybe_backup': Arquivo ou diretório inexistente
+tomaz@K84CElementary:~/Trybe/Aula Testes/unix_tests$ mv trybe_backup.txt ./backup
+tomaz@K84CElementary:~/Trybe/Aula Testes/unix_tests$ mkdir backup2
+tomaz@K84CElementary:~/Trybe/Aula Testes/unix_tests$ mv ./backup/trybe_backup.txt ./backup2
+tomaz@K84CElementary:~/Trybe/Aula Testes/unix_tests$ ls *
+trybe1.txt
+
+backup:
+
+backup2:
+trybe_backup.txt
+tomaz@K84CElementary:~/Trybe/Aula Testes/unix_tests$ rmdir backup
+tomaz@K84CElementary:~/Trybe/Aula Testes/unix_tests$ pwd
+/home/tomaz/Trybe/Aula Testes/unix_tests
+tomaz@K84CElementary:~/Trybe/Aula Testes/unix_tests$ ls
+backup2  trybe1.txt
+tomaz@K84CElementary:~/Trybe/Aula Testes/unix_tests$ head -5 skills.txt
+Internet
+Unix
+Bash
+HTML
+CSS
+tomaz@K84CElementary:~/Trybe/Aula Testes/unix_tests$ tail -4 skills.txt
+CSS
+JavaScript
+React
+SQL
+tomaz@K84CElementary:~/Trybe/Aula Testes/unix_tests$ rm *.txt
+tomaz@K84CElementary:~/Trybe/Aula Testes/unix_tests$ ls
+tomaz@K84CElementary:~/Trybe/Aula Testes/unix_tests$ 
+
+

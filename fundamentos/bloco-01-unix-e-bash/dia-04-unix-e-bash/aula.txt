@@ -1,0 +1,63 @@
+Unix & Bash
+
+    Kernel faz interação entre hardware e software. Começa a rodar assim que ligamos o computador
+    Shell faz ligação entre o so/usuário/kernell. É uma interface de ligação.
+    Shell lê linha, interpreta, executa e devolve resultado para o usuário.
+    Processos - tudo que você faz é um processo. Cada processo possui identificador único (PID)
+    Arquivos - no unix tudo são arquivos, sejam diretórios, arquivos e outros
+    / é a raiz do sistema, fica acima dos outros diretórios.
+
+Comandos do Terminal
+    Trabalhando com diretórios
+        ls - lista os diretórios
+            -a inclui arquivos ocultos
+        cd - change directory (mudar de diretório)
+            . - indica o diretório que vc está
+            .. - retorna ao diretório acima
+        mkdir - make directory (cria um diretório)
+        pwd - mostra o caminho completo de onde vc está
+    Operações com arquivos e diretórios
+        cp - copy (copia)
+            ➡️ cp arquivo1.txt arquivo2.txt
+        cat - concatenate (abre um arquivo)
+            ➡️ cat arquivo1.txt
+        rm - Remove (remove ou apaga)
+            ➡️ rm arquivo2.txt
+        mv - move (move o arquivo)
+            ➡️ mv arquivo1.txt /home/tomaz/Trybe (lembrar que tem que indicar o caminho completo)
+        rmdir - remove diretório. (Obs. Só remove se estiver vazio)
+            -rf - apaga com arquivos junto
+            ➡️ rmdir -rf Trybe
+    Conteúdos de arquivos
+        less - mostra conteúdo dividido em páginas (tecla q para sair e espaço para mudar de página)
+            less permite busca após aberto - tecla / e o que quer buscar, com a tecla m você vai para o próximo resultado.
+        head - mostra as dez primeira linhas do conteúdo
+            -5 - vc pode indicar quantas linhas deseja ver (nese caso 5)
+        tail - mostra os dez últimos (pode indicar também uma quantidade diferente assim como head)
+        grep - (faz buscas)
+            -i - para não ser case sensitive
+            '' - para buscar frase
+            ➡️ grep 'Toy Story' filmes.txt
+            -v - buscar tudo menos a palavra ou frase escolhida
+            -n - busca e indica a linha que está o resultado
+            -c - conta quantas vezes foi encontrado o resultado da busca
+        wc - conta linhas, palavras e caracteres que contém o arquivo
+            -l - lines (mostra só a quantidade de linhas)
+            -w - words (mostra só a quantidade de palavras)
+            -c - caractere (mostra só a quantidade de caracteres)
+    Nomeando arquivos
+        
+    Dicas
+        ls
+            * - (mostra tudo, diretórios e arquivos)
+            ? - coringa que substitui letras que não lembramos
+            ➡️ ls ?rybe (para listar o que tem no diretório Trybe)
+        Criação de nomes
+            Terminal entende que o espaço indica outro comando
+            ➡️ arquivo 3.txt (terminal entende que são 2 arquivos, arquivo e 3.txt)
+            ➡️ arquivo_3.txt (usar o _ no lugar do espaço ao criar o arquivo)
+        man - (manual do comando)
+            ➡️ man ls (vai retornar descrição e variações do comando)
+        whatis - (o que é - mostra o que o comando faz)
+        apropos - (ajuda achar o comando que precisamos)
+            ➡️ apropos copy (vai mostrar comandos relacionados à cópia)

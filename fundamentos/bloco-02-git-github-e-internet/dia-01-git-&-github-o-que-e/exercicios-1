@@ -1,0 +1,11 @@
+    $ mkdir iniciando-git
+    $ cd iniciando-git
+    $ git init
+    $ cat > meu_arquivo.txt
+    $ git add .
+    $ git commit -m "Mensagem sobre a alteração feita"
+    $ git remote add origin git@github.com:OrbnuMozat/reposit-rio_de_aulas.git
+    $ git remote -v
+    $ git status
+    $ git push origin master
+
