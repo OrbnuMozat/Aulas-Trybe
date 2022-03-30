@@ -1,0 +1,13 @@
+  263  29.3.2022 04:30  git checkout -b trybe-skills-changes
+  264  29.3.2022 04:30  code .
+  265  29.3.2022 04:33  git add trybe_skills.txt
+  266  29.3.2022 04:34  git commit -m "Duas Skills novas adicionadas"
+  267  29.3.2022 04:35  git push -u origin trybe-skills-changes
+  268  29.3.2022 04:39  git branch
+  269  29.3.2022 04:40  git checkout master
+  270  29.3.2022 04:40  git branch
+  271  29.3.2022 04:45  git checkout -b trybe-skills-updates
+  272  29.3.2022 04:45  code .
+  273  29.3.2022 04:46  git add trybe_skills.txt
+  274  29.3.2022 04:47  git commit -m "Add uma Skill"
+  275  29.3.2022 04:47  git push -u origin trybe-skills-updates
