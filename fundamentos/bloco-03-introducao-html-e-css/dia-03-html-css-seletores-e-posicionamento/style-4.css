@@ -1,0 +1,54 @@
+div:hover {
+    border-style: solid;
+    border-color: blueviolet;
+    border-width: 3px;
+    border
+    }
+
+div:nth-of-type(1) {
+    background-color: beige;
+}
+
+div:nth-of-type(2) {
+    background-color: aquamarine;
+}
+
+div:nth-of-type(3) {
+    background-color: coral;
+    height: 60px;
+    }
+
+div:nth-of-type(4) {
+    background-color: brown;
+}
+
+div:nth-of-type(5) {
+    background-color: azure;
+    
+}
+
+div:nth-of-type(1) > h3 {
+    color: blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+div:nth-of-type(2) > h3 {
+    color: blueviolet;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div:nth-of-type(3) > h3 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+div:nth-of-type(4) > h3 {
+    color: aliceblue;
+}
+
+div:nth-of-type(5) > h3 {
+    color: red;
+}
+
+div:nth-child(odd) {
+    font-style: italic;
+}
