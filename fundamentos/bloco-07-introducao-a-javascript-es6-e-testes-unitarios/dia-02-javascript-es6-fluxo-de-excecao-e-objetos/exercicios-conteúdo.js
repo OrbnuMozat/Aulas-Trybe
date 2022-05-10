@@ -95,14 +95,13 @@ const student1 = {
     Git: 'Bom', // chave adicionada
   };
 
-// for (let hability in student1) {
-//     console.log(`${hability}, Nível:${student1[hability]}`);
-// };
-
-// for (let hability in student2) {
-//     console.log(`${hability}, Nível:${student1[hability]}`);
-// };
-// Tive que usar 2 for, um pra cada estudante.
+// const testMyForm = (estudante) => {
+//     for (let hability in estudante) {
+//     console.log(`${hability}, Nível:${estudante[hability]}`);
+//     };
+// }
+// testMyForm(student1);
+// testMyForm(student2);
 
 const listSkills = (student) => {
     const arrayOfSkills = Object.keys(student);
@@ -116,3 +115,6 @@ listSkills(student1);
 
 console.log('Estudante 2');
 listSkills(student2);
+
+// Para saber se algo está em uma array use .includes. Vai retorna true ou false. Ex.
+// console.log(Object.keys(student1).includes('Css'));
