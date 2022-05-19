@@ -1,5 +1,7 @@
 /* 4 - Escreva uma função filterPeople que, dada uma lista de pessoas, retorna todas as pessoas australianas que nasceram no século 20: */
 
+/* use object destructuring */
+
 const people = [
     {
       name: 'Nicole',
