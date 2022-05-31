@@ -39,6 +39,4 @@ const people = [
 
 const filterPeople = (arrObj) => arrObj.filter(({ nationality, bornIn }) => nationality === 'Australian' && bornIn > 1900 && bornIn <= 2000);
 
-console.log(filterPeople(people));
-
 module.exports = { filterPeople };
