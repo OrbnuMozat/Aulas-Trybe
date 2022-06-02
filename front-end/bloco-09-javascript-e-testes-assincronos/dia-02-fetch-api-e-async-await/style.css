@@ -1,0 +1,21 @@
+#cryptoContainer {
+    display: flex;
+    justify-content: center;
+}
+#cryptoList {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 15px;
+    max-width: 70%;
+    padding: 12px;
+    border: 15px solid rgb(243, 220, 191);
+    border-radius: 5px;
+    background-color: rgb(236, 212, 181);
+    color: rgb(55, 55, 55);
+}
+
+h1 {
+    text-align: center;
+}
