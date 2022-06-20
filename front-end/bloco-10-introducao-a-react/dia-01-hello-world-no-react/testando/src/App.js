@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import ReactClass from './Componentes/primeiroComponente';
+import Apresentation from './Componentes/primeiroComponente';
 
 function App() {
   const textJSX = 'Hello, JSX';
@@ -9,7 +9,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h1>{textJSX}</h1>
-        < ReactClass />
+        < Apresentation />
       </header>
     </div>
   );

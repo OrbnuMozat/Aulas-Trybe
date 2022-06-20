@@ -1,11 +1,15 @@
 import React from "react";
+import logo from '../logo.svg';
 
-class ReactClass extends React.Component {
+class Apresentation extends React.Component {
     render () {
         return (
-            <h1>Meu primeiro componente react!</h1>
+            <>
+                <h1>Bruno Diniz Tomaz</h1>
+                <p>Sou estudante de desenvolvimento web e estou muito animado {String.fromCodePoint(0x1F600)} com React <img src={logo} width={'35px'} alt="logo" /></p>
+            </>
         )
     }
 }
 
-export default ReactClass;
+export default Apresentation;
