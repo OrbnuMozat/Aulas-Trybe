@@ -1,10 +1,13 @@
 import React from 'react';
 import './App.css';
 import Cars from './Cars';
+import Creator from './context/providerCreator';
 
 function App() {
   return (
-    <Cars />
+    <Creator>
+      <Cars />
+    </Creator>
   );
 }
 
