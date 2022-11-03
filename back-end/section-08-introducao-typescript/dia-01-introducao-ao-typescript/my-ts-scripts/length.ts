@@ -1,8 +1,6 @@
 import readline from 'readline-sync';
 
-type Tunits = "km" | "hm" | "dam" | "m" | "dm" | "cm" | "mm"; // predefine valores que pode receber
-const unitsS = ["km", "hm", "dam", "m", "dm", "cm", "mm"];
-
+type Tunits = 'km' | 'hm' | 'dam' | 'm' | 'dm' | 'cm' | 'mm'; // predefine valores que pode receber
 
 enum mesureUnit {
   km = 1000,
@@ -15,14 +13,24 @@ enum mesureUnit {
 }
 
 function convertS<T>(value: number, unitBase: T, unitConvert: T) {
-  
-  return (value * mesureUnit[<Tunits>unitBase]) / mesureUnit[<Tunits>unitConvert];
-};
+  return (
+    (value * mesureUnit[<Tunits>unitBase]) / mesureUnit[<Tunits>unitConvert]
+  );
+}
 
 function exec() {
-  const option = {limit: unitsS, limitMessage: 'Sorry, $<lastInput> is not valid unit.\nUnit must be in lowerCase.\n', caseSensitive: true,};
+  const unitsS = ['km', 'hm', 'dam', 'm', 'dm', 'cm', 'mm'];
+  const option = {
+    limit: unitsS,
+    limitMessage:
+      'Sorry, $<lastInput> is not valid unit.\nUnit must be in lowerCase.\n',
+    caseSensitive: true,
+  };
   const value = readline.questionFloat('Digite o valor a ser convertido: \n');
-  const from = readline.question('Digite a unidade a ser convertida: \n', option);
+  const from = readline.question(
+    'Digite a unidade a ser convertida: \n',
+    option
+  );
   const to = readline.question('Digite a unidade para converter: \n', option);
 
   const result = convertS(value, from, to);
