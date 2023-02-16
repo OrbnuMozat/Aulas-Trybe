@@ -6,10 +6,12 @@ try:
             if int(line[1]) >= 6:
                 aprovados += f"{line[0]}\n"
 
-    with open("aprovados", mode="w") as file:
-        file.write(aprovados)
+    with open("aprovados", mode="w") as new_file:
+        new_file.write(aprovados)
+    print(f'Lista de aprovados:\n{aprovados}')
 except OSError:
     print("erro ao ler arquivo e salvar aprovados")
 finally:
     print(
-        "Tentativa de ler arquivo e criar aprovados.")
+        "Tentativa de ler arquivo e criar aprovados."
+        )
