@@ -1,0 +1,31 @@
+❯ docker pull debian:stable-slim
+stable-slim: Pulling from library/debian
+ff12a8b5aa85: Pull complete 
+Digest: sha256:8b49bae84e068b852725770ea01a0a08e461620da8006b69f8cc09c93d16d221
+Status: Downloaded newer image for debian:stable-slim
+docker.io/library/debian:stable-slim
+❯ docker images
+REPOSITORY    TAG           IMAGE ID       CREATED         SIZE
+debian        stable-slim   3631e7303ec4   2 weeks ago     80.4MB
+alpine        3.14          dd53f409bf0b   4 weeks ago     5.61MB
+hello-world   latest        feb5d9fea6a5   11 months ago   13.3kB
+❯ docker container run -dit debian:stable-slim bash
+d52dcef0ea4af017c50c8578527d1c777047085e58dfd46ab3e51da86b3aaa8a
+❯ docker ls
+docker: 'ls' is not a docker command.
+See 'docker --help'
+❯ docker container ls
+CONTAINER ID   IMAGE                COMMAND   CREATED          STATUS          PORTS     NAMES
+d52dcef0ea4a   debian:stable-slim   "bash"    35 seconds ago   Up 33 seconds             competent_feistel
+❯ docker exec -it d52dce sh
+# cat /etc/*-release
+PRETTY_NAME="Debian GNU/Linux 11 (bullseye)"
+NAME="Debian GNU/Linux"
+VERSION_ID="11"
+VERSION="11 (bullseye)"
+VERSION_CODENAME=bullseye
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+# exit
